@@ -1,0 +1,8 @@
+{
+  "coffeeName": "Espresso",
+  "bonusCoffees": ["Espresso", "Espresso Macchiato", "Cappuccino"],
+  "customer": {
+    "name": "Jonn Aviel Bautista",
+    "email": "jonn.bautista@example.com"
+  }
+}
