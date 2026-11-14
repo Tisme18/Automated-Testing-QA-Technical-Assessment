@@ -6,7 +6,8 @@ test.describe('Coffee Cart E2E Purchase Flow', () => {
 
     await coffeecapitalism.loveCoffee('Espresso');
     await coffeecapitalism.loveCoffee('Espresso Macchiato');
-    await coffeecapitalism.loveCoffee('Espresso Macchiato');  
+    await coffeecapitalism.loveCoffee('Espresso Macchiato');
+    await coffeecapitalism.loveCoffee('Espresso');  
     if (coffeecapitalism.isPromoExpected()) {
       await coffeecapitalism.PopupAds(false);
     }
