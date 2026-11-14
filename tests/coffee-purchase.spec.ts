@@ -7,10 +7,10 @@ test.describe('Coffee Cart E2E Purchase Flow', () => {
     await coffeecapitalism.loveCoffee('Espresso');
     await coffeecapitalism.loveCoffee('Espresso Macchiato');
     await coffeecapitalism.loveCoffee('Espresso Macchiato');
-    await coffeecapitalism.loveCoffee('Espresso');  
     if (coffeecapitalism.isPromoExpected()) {
-      await coffeecapitalism.PopupAds(false);
+      await coffeecapitalism.PopupAds(true);
     }
+    await coffeecapitalism.loveCoffee('Espresso');  
     await coffeecapitalism.capitalism();
     await expect(page).toHaveURL(/.*cart/);
     await expect(page.locator('text=Total: ')).toBeVisible();
