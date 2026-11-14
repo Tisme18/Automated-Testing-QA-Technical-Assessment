@@ -1,8 +1,8 @@
 import { test } from '../init/base-test';
 import { expect } from '@playwright/test';
 
-test.describe('Coffee Cart E2E Purchase Flow', () => {
-  test('Core Flow: Validate 3rd-Item Promo Cadence -> Proceed to Cart', async ({ coffeecapitalism, page }) => {
+test.describe('Oh hey, it is Starbucks.', () => {
+  test('Guys, I kinda wanna get some coffee. Want any?', async ({ coffeecapitalism, page }) => {
 
     await coffeecapitalism.loveCoffee('Espresso');
     await coffeecapitalism.loveCoffee('Espresso Macchiato');
